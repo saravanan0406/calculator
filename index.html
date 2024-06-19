@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center text-uppercase mt-3">
+                <h1>calculator</h1>
+            </div>
+        </div>
+        <div class="box m-auto">
+        <div class="row m-5 text-center ">
+            <div class="col-md-12">
+                <input class="form p-2 w-50 rounded-pill border border-danger-subtle " type="text" id="text" name="field">
+            </div>
+        <div class="containe mt-5">
+        <div class="row text-center mt-1">
+            <div class="col-md-3">
+                <button value="7" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">7</button>
+            </div>
+            <div class="col-md-3">
+                <button value="8" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">8</button>
+            </div>
+            <div class="col-md-3">
+                <button value="9" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">9</button>
+            </div>
+            <div class="col-md-3">
+                <button value="+" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">+</button>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-md-3">
+                <button value="4" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">4</button>
+            </div>
+            <div class="col-md-3">
+                <button value="5" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">5</button>
+            </div>
+            <div class="col-md-3">
+                <button value="6" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">6</button>
+            </div>
+            <div class="col-md-3">
+                <button value="-" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">-</button>
+            </div>
+        </div>
+
+        <div class="row text-center mt-3">
+            <div class="col-md-3">
+                <button value="1" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">1</button>
+            </div>
+            <div class="col-md-3">
+                <button value="2" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">2</button>
+            </div>
+            <div class="col-md-3">
+                <button value="3" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">3</button>
+            </div>
+            <div class="col-md-3">
+                <button value="*" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">*</button>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-md-3">
+                <button value="00" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">00</button>
+            </div>
+            <div class="col-md-3">
+                <button value="0" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">0</button>
+            </div>
+            <div class="col-md-3">
+                <button value="." onclick="handleClick(event)" class="numbers p-3" id="inputnumber">.</button>
+            </div>
+            <div class="col-md-3">
+                <button value="/" onclick="handleClick(event)" class="numbers p-3" id="inputnumber">/</button>
+            </div>
+        </div>
+        <div class="row text-center mt-3">
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-3">
+            </div>
+            <div class="col-md-3">
+                <button value="" onclick="handleClear()" class="numbers p-3" id="inputnumber">AC</button>
+            </div>
+            <div class="col-md-3">
+                <button value="=" onclick="handleEqual()" class="numbers p-3" id="inputnumber">=</button>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
